@@ -1,0 +1,23 @@
+{
+  "name": "todo-list",
+  "version": "1.0.0",
+  "description": "A to-do list application with vanilla TypeScript and React",
+  "scripts": {
+    "build": "tsc && npm run bundle",
+    "bundle": "esbuild to-do.tsx --bundle --outfile=dist/to-do.js",
+    "dev": "tsc --watch & esbuild to-do.tsx --bundle --outfile=dist/to-do.js --watch"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "react": "^18.2.0",
+    "react-dom": "^18.2.0"
+  },
+  "devDependencies": {
+    "@types/react": "^18.2.0",
+    "@types/react-dom": "^18.2.0",
+    "typescript": "^5.3.0",
+    "esbuild": "^0.19.0"
+  }
+}
